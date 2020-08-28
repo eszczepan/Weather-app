@@ -12,7 +12,6 @@ const App = () => {
       const data = await fetchData(inputValue);
       setWeather(data);
       setInputValue("");
-      console.log(data);
     }
   };
 
