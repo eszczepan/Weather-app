@@ -26,9 +26,11 @@ body {
 .container {
   width: 50rem;
   min-height: 50rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .search-input {
@@ -63,6 +65,7 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -76,7 +79,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.card__header > p {
+.card__header>p {
   color: gray;
   font-weight: 600;
   font-size: 1.3rem;
@@ -86,12 +89,13 @@ body {
   margin-bottom: 0;
 }
 
-.card__city > h2 {
-  font-size: 3rem;
+.card__city>h2 {
+  font-size: 2.7rem;
 }
 
-.card > h4 {
+.card>h4 {
   font-size: 1.5rem;
+  text-align: left;
 }
 
 .card__city-temp {
@@ -99,7 +103,7 @@ body {
   align-items: center;
 }
 
-.card__city-temp > h1 {
+.card__city-temp>h1 {
   font-size: 6rem;
 }
 
@@ -125,8 +129,8 @@ body {
   width: 47%;
 }
 
-.card__details-1 > p,
-.card__details-2 > p {
+.card__details-1>p,
+.card__details-2>p {
   font-size: 1.4rem;
   width: 100%;
   display: flex;
@@ -139,43 +143,106 @@ body {
   .container {
     width: 40rem;
   }
+
+  .card__city-temp>img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .card__city>h2 {
+    font-size: 2.4rem;
+  }
+
+  .card__city-temp>h1 {
+    font-size: 5rem;
+  }
+
 }
 
 @media (max-width: 420px) {
   .container {
     width: 30rem;
   }
-  .card__details-1 > p,
-  .card__details-2 > p {
+
+  .card>h4 {
+    font-size: 1.2rem;
+  }
+
+  .card__details-1>p,
+  .card__details-2>p {
     font-size: 1rem;
+  }
+
+  .card__header>p {
+    font-size: 1.2rem;
+  }
+
+  .card__header>h3 {
+    font-size: 1.3rem;
+  }
+
+  .card__city>h2 {
+    font-size: 1.7rem;
+  }
+
+  .card__city-temp>h1 {
+    font-size: 3.7rem;
+  }
+
+  .card__city-temp>img {
+    width: 5.5rem;
+    height: 5.5rem;
   }
 }
 
 @media (max-width: 320px) {
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
   .search-input {
     width: 20rem;
   }
+
+  .card>h4 {
+    font-size: 1rem;
+  }
+
   .container {
     width: 25rem;
   }
 
-  .card__header > p {
-    font-size: 1.2rem;
+  .card__header {
+    margin-bottom: 1rem;
   }
 
-  .card__header > h3 {
-    font-size: 1.3rem;
+  .card__header>p {
+    font-size: 1rem;
   }
 
-  .card__city > h2 {
-    font-size: 2rem;
+  .card__header>h3 {
+    font-size: 1rem;
   }
 
-  .card__city-temp > h1 {
+  .card__city>h2 {
+    font-size: 1.4rem;
+  }
+
+  .card__city-temp>h1 {
     font-size: 3rem;
   }
-  .card__details-1 > p,
-  .card__details-2 > p {
+
+  .card__city-temp>img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card__details {
+    margin-top: 2rem;
+  }
+
+  .card__details-1>p,
+  .card__details-2>p {
     font-size: 0.8rem;
   }
 }
