@@ -13,7 +13,6 @@ const Card = ({ weather }) => {
         <p>
           {hours < 10 ? `0${hours}` : hours}:
           {minutes < 10 ? `0${minutes}` : minutes}
-          {hours < 13 ? " AM " : " PM"}
         </p>
       </div>
 

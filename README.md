@@ -1,4 +1,4 @@
-# :tada: Weather App
+# Weather App
 
 PWA Weather React application
 
